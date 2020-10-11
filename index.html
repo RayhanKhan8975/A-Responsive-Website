@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gene SEO</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+	<link rel="stylesheet" type="text/css" href="css\style.css">	
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button> 
+			<a class="navbar-brand mr-auto" href="index.html"><span><img style="max-width: 50px;" src="img/header.jpg"> </span> Gene SEO</a>
+			<div id="Navbar" class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a href="index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
+				<li class="nav-item"><a href="about us.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>Tools</a></li>
+				<li class="nav-item"><a href="contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+			</ul>
+			<span class="navbar-text">
+			<a data-toggle="modal" data-target="#loginModal">
+			<span class="fa fa-sign-in"></span> Login
+			</a>
+			</span>
+			</div>
+		</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg" role="content">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Login</h4>
+				<button type="button" class="close" data-dismiss = "modal">&times;</button>
+			</div>
+			<div class="modal-body col-12">
+				<form>
+					<div class="form-group row">
+						<div class="col-sm-2"></div>
+						<label for="name" class="form-group label col-sm-2 align-items-center">
+							<h5>Name:</h5>
+						</label>
+						<input type="text" name="name" id="name" class="log col-sm-5 ">
+
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-2"></div>
+						<label for="password" class="form-group label col-sm-2 align-items-center">
+							<h5>Password:</h5>
+						</label>
+						<input type="password" name="password" id="password" class="log col-sm-5 ">
+					</div>
+
+					<div class="form-group row">
+						<div class="col-sm-4"></div>
+						<button class="btn btn-success col-sm-4 " role="button" type="submit">Login</button>
+                        <div class="col-sm-4"></div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				By logging in you agree the terms &amp conditions of Gene.Inc
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="container">
+	<div class="row">	<div id="Reserve" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg" role="content" >
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Register</h4>
+				<button class="close" type="button" data-dismiss = "modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form>
+				 <div class="form-group row">
+					<div class="btn-group btn-group-toggle form-group col-12" data-toggle="button">
+						<h5 class="col-sm-2">Pages</h5>
+						<label class="btn btn-success"><input type="radio" value="Small" name="section" id="section" autocomplete="off">Small </label>
+						<label class="btn btn-warning"><input type="radio" name="section" value="medium" id="section" autocomplete="off">Medium (10,000 pages)</label>
+					    <label class="btn btn-danger"><input type="radio" name="section" id="section" value="large" autocomplete="off">Large(+10,000)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="engine" class="col-sm-4"><h5>Target Search Engine</h5></label>
+					<select id="engine" name="engine" class="col-sm-3 btn-success">
+						<option class="btn-primary" value="Google">Google</option>
+						<option class="btn-danger" value="Yahoo">Yahoo</option>
+						<option class="btn-warning" value="Bing">Bing!</option>
+					</select>
+				</div>
+				<div class="form-group row" >
+					<div class="col-sm-3"></div>
+					<button class="btn col-sm-3 btn-primary" type="submit">Submit</button>
+				    
+					<button class="btn col-sm-3 btn-info" data-dismiss="modal">Cancel</button>
+				    <div class="col-sm-3"></div>
+				</div>
+
+				</form>
+			</div> 
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<header class="jumbotron">
+	   <div class="container">
+	       <div class="row row-header text-white">
+	           <div class="col-sm-6">
+		           <h1> Gene SEO</h1>
+   	              <p>We take inspiration from world's best SEO specialists</p>
+               </div>
+               <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                    	<button type="button" class="btn btn-warning" role="button" data-toggle="modal" data-target="#Reserve">
+     SEO Audit
+            </button></div>
+           </div>
+      </div>
+</header>
+
+<div class="container">
+	<div class="row row-content d-none d-lg-block">
+		<div class="col ">
+		<div id="myCarousel" class="carousel slide " data-ride="carousel">
+			<div class="carousle-inner" type="listbox">
+				<div class="carousel-item active col-15 text-white">
+	<h4>Our Work Includes 1000+ Websites Built</h4>
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-2"><img src="img/WebDesign.svg" class="d-none d-sm-block img-fluid" class="rounded-circle">
+			<h6>WebDesign</h6>
+		</div>
+		<div class="col-sm-2"><img class="d-none d-sm-block img-fluid" src="img/Development.svg" class=" rounded-circle">
+			<h6>WebDevelopment</h6>
+		</div>
+		<div class="col-sm-2"><img src="img/Branding.svg" class="d-none d-sm-block img-fluid" class=" rounded-circle">
+			<h6>Branding</h6>
+		</div>
+		<div class="col-sm-2"><img src="img/SEO.svg" class="d-none d-sm-block img-fluid" class="rounded-circle">
+			<h6>SEO</h6>
+		</div>
+		<div class="col-sm-2"><img class="d-none d-sm-block img-fluid" src="img/Ecommerce.svg" class="rounded-circle">
+		<h6>E-COMMERCE</h6>
+		</div>
+		<div class="col-sm-1"></div>
+		
+		</div>
+						</div>
+			<div class="carousel-item text-white" id="FeaturedIn" style="background-color: #1a5fb4">
+			<h4>Featured In</h4>
+			<div class="row col-12">
+				<div class="col-sm-1"></div>
+				<img src="img/bloomberg.webp" class="d-none d-sm-block" class="col-sm-3">
+				<div class="col-sm-4"></div>
+				<img src="img/computerworld.webp" class="d-none d-sm-block" class="col-sm-3">
+				<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+
+					<div class="col-sm-1"></div>
+				<img src="img/pcworld.webp" class="d-none d-sm-block" class="col-sm-3">
+
+					<div class="col-sm-4"></div>
+				<img src="img/abcnews.webp" class="d-none d-sm-block" class="col-sm-3">
+	
+					<div class="col-sm-1"></div>
+			</div>
+			</div>		
+				<div class="carousel-item">
+					<div class="carousel-caption">
+						<h2>Rayhan Khan</h2>
+			<h5>CTO and SEO specialist of Gene</h5>
+			<p class="d-none d-sm-block">An ex-google search engineer and consultant #1 SEO specialist
+            holder of many allocations patents and awards. He has a dream to connect people with the most relevant content in the world.  
+			</p>
+					</div>
+				</div>
+			
+				</div>
+
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+					<li  data-target="#myCarousel" data-slide-to="1"></li>
+					<li  data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<a href="#myCarousel" class="carousel-control-prev"  role="button" data-slide="prev" ><span class="carousel-control-prev-icon "></span> </a>
+			
+				<a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next" ><span class="carousel-control-next-icon"></span> </a>
+	           <div class="btn-group" id="buttons">
+				<button class="btn btn-danger btn-sm" style="width: 100px;" id="carouselButton">
+					<span class="fa fa-pause"></span>
+				</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="row d-sm-block d-lg-none" style="margin: 25px 0px 25px 0px;">
+	<div class="col-sm-1"></div>
+<div id="accordion" class="col-sm-10">
+<div class="card  bg-dark text-white">
+	<div class="card-header" role="tab" id="leadership"><h3 class="mb-0">
+	<a data-target="#leaders" data-toggle="collapse">Leadership</a></h3>
+</div>
+	<div role="tab-panel" class="collapse" id="leaders" data-parent="#accordion" >
+	<div class="card-body">
+
+<div class="jj">
+	<h3> Adam Medros</h3>
+<p>President and co-CEO</p>
+</div>
+<div class="jj">
+<h3>Johannes Heinlein</h3>
+
+<p>Chief Commercial Officer and Senior Vice President of Strategic Partnerships</p>
+</div><div class="jj">
+
+<h3>Stephanie Brocoum</h3>
+<p>Chief Marketing Officer</p></div>
+<div class="jj">
+<h3>
+Nell Ma'luf</h3>
+<p>
+Vice President and General Counsel
+</p></div>
+<div class="jj">
+<h3>
+Kathy Pugh</h3>
+<p>
+Vice President of Services
+</p></div>
+	
+</div>
+</div>
+</div>
+<div class="card  bg-dark text-white">
+	<div class="card-header" role="tab" id="Directors">
+		<h3 class="mb-0">
+			<a data-target="#Director" data-toggle="collapse">
+				Director
+			</a>
+		</h3>
+	</div>
+<div role="tab-panel" class="collapse" id="Director"  data-parent="#accordion" >
+	<div class="card-body">
+		
+<div class="jj">
+<h3>	Alan M. Garber, co-chair
+</h3><p> Provost, Harvard University
+</p></div>
+<div class="jj">
+<h3>
+Martin A. Schmidt, co-chair
+</h3><p> Provost, Massachusetts Institute of Technology
+</p></div>
+<div class="jj">
+<h3>
+Anant Agarwal
+</h3>
+<p> CEO, edX and Professor, Massachusetts Institute of Technology
+</p></div>
+<div class="jj">
+<h3>
+Paul Alivisatos</h3><p>
+Executive Vice Chancellor & Provost of the University of California, Berkeley
+</p>
+</div>
+	</div>
+
+</div>
+</div>
+<div class="card bg-dark text-white">
+	<div class="card-header " role="tab">
+		<h3 class="mb-0">
+			<a data-toggle="collapse" data-target="#relations-1">Advisors</a>
+		</h3>
+	</div>
+
+<div class="collapse" id="relations-1" role="tab-panel" data-parent="#accordion">
+	<div class="card-body">
+		<div class="jj">
+<h3>	Malte Brettel </h3><p>
+Vice-Rector for Industry Relations, RWTH Aachen University
+</p></div>
+<div class="jj">
+<h3>
+Robert L. Caret</h3><p>
+Chancellor, The University System of Maryland
+</p></div>
+<div class="jj"><h3>
+Alan M. Garber</h3>
+<p> Provost, Harvard University
+</p>
+</div>
+<div class="jj"><h3>
+Robert M.
+</h3>
+<p>
+Provost, Georgetown University
+</p>
+</div>
+<div class="jj"><h3>
+Marnie Hughes-Warrington</h3>
+<p>
+Deputy Vice-Chancellor Academic, Australian National University
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-1"></div>
+
+
+			
+		</div>	
+	<div id="reviews" class="row row-content trans col-12 align-items-center">
+		<div class="col-sm-1 col-md-3"><img src="img/Badge_FacebookReviews-blue.svg" class="rounded-circle"> </div>
+		<div class="col-sm-1 col-md-3"><img class="rounded-circle" src="img/Badge_GoogleReviews-blue.svg"> </div>
+		<div class="col-sm-1 col-md-3"><img class="rounded-circle" src="img/Badge_IndeedReviews-blue.svg"> </div>
+		<div class="col-sm-1 col-md-3"><img src="img/clutch20.svg" class="rounded-circle"> </div>
+	</div>
+	<div class="row row-content">
+ 	<div class="col-sm-5 img-overlay">
+ <div class="col">
+ 		<h3>Digital Marketing</h3>
+<h5>Our Coalition team is best for advance level, highly succesful, AI driven Marketing
+Which generated 764% more revenue than the average agency
+ </h5>
+</div>
+<div class="btn-group col-sm">
+	<a type="button" href="mailto:ShayCromac@gmail.com" style="width: auto;margin-top: 50px;" class="btn btn-success"><h5 class="text-white">Talk your Digital Startegist</h5></a>
+</div>
+ 			</div>
+
+ 	<div class="col-sm-3 col-md-5 col-lg-7">
+ 		<img src="img/Digital-Marketing-Driving-Revenue.png.webp">
+ 	</div>
+ 
+ </div>
+ <div class="row row-content">
+ 	<div class="col-sm-6">
+ 		<h2 class="header">An SEO service Company for the Age of Artificial Intelligence</h2>
+ 		<br>
+ 		<p>
+We base our SEO, web design, PPC, social, SMS, and email strategies on hard data and scientifically tested techniques. Our 600+ successful client case studies prove the ROI our methods provide.</p>
+<p>
+Many of our competitors are just web design companies who have read a few blog posts about digital marketing, know buzzwords like “SEO” and “PPC”, and think they can provide these services. Coalition's team members have over EIGHTEEN centuries of cumulative digital marketing work experience.</p>
+
+<p> Most of our competitors claim to have high client-retention rates when really they just have onerous 12- or 24-month contracts. We offer month-to-month agreements because we are so confident you will be impressed with our work.</p>
+
+<p> No other agency has a team remotely as good as we have. Coalition only hires the top 1% of our skills-tested applicants, and their rigorous training includes our university-level educational courses. We have systems, processes, checklists, and AI-powered tools to make sure our work is of the highest quality. And our team members benefit from extraordinary incentives, including the ability to grow their pay several times over by delivering outstanding results for our clients.</p>
+ 	</div>
+ 	<div class="col-sm-6">
+ 		<div class="card" id="card">
+ 		<div class="card-header text-white text-align-center trans"><h4> Get a Free Account &amp Competitor Strategy Review Now</h4></div>
+ 		<div class="card-body">
+ 			                <form>
+                    <div class="form-group row">
+                  <label class="col-md-1 col-form-label" for="Name"></label>
+                  <div class="col-md-10">
+                    <input type="text" name="Name" id="Name" required class="form-control" placeholder="Name*">
+                      
+                  </div>
+                        
+                    </div>
+                     <div class="form-group row">
+                  <label class="col-md-1 col-form-label" for="Email"></label>
+                  <div class="col-md-10">
+                    <input type="email" name="Email" id="Email" class="form-control" required placeholder="Email*">
+                      
+                  </div>
+                        
+                    </div>
+                    <div class="form-group row">
+                      
+                  <label class="col-md-1 col-form-label" for="Phone"></label>
+                 <div class="col-7 col-md-7">
+                    <input type="number" name="Phone" min="10" id="Phone" class="form-control" required placeholder="Phone Number*">  
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-1">
+                    <div class="form-check">
+                    <input type="checkbox" name="approve" id="approve" class="form-check-input" required value="approve">
+                    <label for="approve" class="form-check-label"><strong>May we contact you?</strong></label>
+                    </div>
+                    </div>
+                      <div class="col-md-3 offset-md-1">
+                        <select class="form-control" name="contact">
+                            <option value="Phone">Phone</option>
+                            <option value="Email">Email</option>
+                        </select>   
+                    </div>
+                    
+                  </div>
+
+                    <div class="form-group row">
+                  <label class="col-md-1 col-form-label" for="feedback"></label>
+                  <div class="col-md-10">
+                <textarea class="col-md" placeholder="Message*" class="form-control" rows="12" id="feedback"
+                  name="Message"></textarea>
+                  
+                  </div>
+                        
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-1 col-md-4">
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </div>
+                    </div>
+                </form>
+ 		</div>
+ 	</div>
+ </div>
+ 	</div>
+ <div class="row jumbotron align-items-center">
+	<blockquote class="blockquote text-white" style="text-align: center;">
+	<h5 class="mb-0">"We guarantee work hours by our expert team in every agreement. If your agency doesn't guarantee you work hours in writing, you won't get them! You will just get templates and automatic report exports that provide little value."</h5>
+						<footer class="blockquote-footer text-align-center text-white">
+							<h4> Rayhan Khan
+	
+							 <cite title="Source Title">
+				            Gene's President
+							</cite></h4>
+						</footer>
+					</blockquote>
+					
+				</div>	
+				<div class="row row-content range" id="range">
+					<div class="col-sm-6">
+						<img src="img/table.png" class="d-none d-sm-block img-fluid">
+					</div>
+					<div class="col-sm-6">
+						<div class="media">
+							<img src="img/Google.svg" class="rounded-circle">
+						<div class="media-body"><h5> Premiere Google Ads Certified Partner</h5>
+							<p>
+4.7average review rating on Google with 110+ reviews</p> </div>
+						</div>
+						<div class="media">
+							<img class="rounded-circle" src="img/Facebook.svg">
+						<div class="media-body"><h5></h5>
+							<h6>4.8average review rating on Facebook with 70+ reviews</h6></div>
+						</div>
+						<div class="media">
+							<img src="img/Featured-Customer.svg" class="rounded-circle">
+						<div class="media-body">
+							<h6>4.7average review rating on Featured Customers with 1,200+ reviews</h6></div>
+						</div>
+						<div class="media">
+							<img src="img/Graph.svg" class="rounded-circle">
+						<div class="media-body">
+							<h6>500+ ranking factors tested and ranked</h6></div>
+						</div>
+						<div class="media">
+							<img src="img/CT-Expert.svg" class="rounded-circle">
+						<div class="media-body">
+							<h6>World-renowned SEO professionals	</h6></div>
+						</div>
+						<div class="media">
+							<img src="img/Gear.svg"class="rounded-circle">
+						<div class="media-body">
+							<h6>Custom internally developed software that brings clients results</h6></div>
+					</div>
+						</div>
+				</div>
+<div class="row row-content text-dark" id="features">
+	<div class="row col-12 text-align-center" style="margin-left: 50px;">
+		<h1>Powered By The World's Most Advance Agency Software</h1>
+		<h4>Gene has built highly advance software to drive your business forward:</h4>
+	</div>
+<div class="col-sm-6">
+<div class="media text-align-center trans">
+	
+	<img src="img/integrations.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+	Integrations with every best in class 3rd party marketing software (Google Analytics, SEMrush, Search Console, WebCEO, Screaming Frog, Google Ads, and many more)</h6>
+</div>
+</div>
+<div class="media">
+	
+	<img src="img/Checklist.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+ Checklists and processes for every service line to ensure that amazing ideas one employee learns for one client instantly get put in place for all clients</h6>
+</div>
+</div>
+<div class="media">
+	
+	<img src="img/AdvanceTools.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+
+Extraordinarily advanced tools and reports that bring consistent results across all of our clients</h6>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+	<div class="media">
+	
+	<img src="img/Recruitement.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+
+Recruiting tools that allow us to hire only the top 1% of applicants through automated skills testing processes, structured scoring and ranking methodologies, and more.
+</h6>
+</div>
+</div>
+<div class="media">
+	
+	<img src="img/AdvanceCourses.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+130+ Advanced university level digital marketing courses to train our team in cutting edge techniques.
+</h6>
+</div>
+</div>
+<div class="media">
+	
+	<img src="img/IncentivePrograms.svg" class="rounded-circle">
+	<div class="media-body">
+	<h6 class="d-flex">
+Highly motivating incentive programs for employees so that when our clients get great results, employees can see their take home pay double or triple</h6>
+</div>
+</div> 
+</div>
+</div>
+	</div>
+<footer class="footer" id="footer">
+	<div class="jumbotron text-floralwhite">
+	<div class="container">
+		<div class="row col-12 row-footer">
+			
+			<div class="col-sm-1 col-md-2 col-lg-3">
+
+			</div>
+			<div class="col-3">
+				                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center col-sm">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                       </div>
+                </div>
+			</div>
+		  <div class="col-sm-3 justify-content-center">
+        
+                   <h5>Our Office</h5>
+                    <address style="font-size: 100%;">
+		<h6>              121, docker street<br>
+		              Sunnyvale, California<br>
+		              US<br>
+		</h6>            </address>
+            </div>
+
+         <div class="col-sm-3  justify-content-center">
+		
+		             <h6>Phone <i class="fa fa-phone"></i>: +852 1234 5678<br></h6>
+<h6>		        Fax      <i class="fa fa-fax"></i>: +852 8765 4321<br></h6>
+		             <h6>Email <i class="fa fa-envelope"></i>:<a href="mailto:GeneSeo@gmail.com">GeneSeo@gmail.com</a></h6>
+		           		</div>
+
+	</div>
+	<div class="row row-footer">
+		<div class="col-sm-4">
+				<div>
+					<h4>PPC(Paid Per Click)</h4>
+					<ul class="list-unstyled text-white">
+						<li> <a href=""> Google Ads</a></li>
+						<li><a href="">Facebook Ads</a></li>
+						<li><a href="">Display Ads</a></li>
+						<li><a href=""> Mobile Ads</a></li>
+					</ul>
+				</div>
+				<div class="menu-item">
+					<h4>Email Marketing</h4>
+					<ul class="list-unstyled">
+						<li><a href="">Our Approach</a> </li>
+						<li><a href="">Consultant</a> </li>
+						<li><a href="">Deliveribality</a> </li>
+					</ul>
+				</div>
+				<div>
+					<h4>Online reputation Management</h4>
+					<ul class="list-unstyled text-white">
+						<li> <a href="">Control Online Repuation</a></li>
+						<li><a href="">Clear Negative Results</a></li>
+						<li><a href="">Monitor and Manage</a></li>
+						<li><a href="">Glossary</a></li>
+					</ul>
+				</div>
+				
+		</div>
+		<div class="col-sm-4">
+			<div class="menu-item">
+					<h4>Social Media</h4>
+					<ul class="list-unstyled">
+						<li><a href=""> Approach</a> </li>
+						<li><a href="">Viral Marketing</a> </li>
+						<li><a href="">Social Media Paid ads</a> </li>
+						<li><a href="">Social Media Campaigns</a> </li>
+						<li><a href="">Social Media Glossary</a> </li>
+						<li><a href="">Social Media FAQs</a> </li>
+					</ul>
+				</div>
+				<div>
+					<h4>Magneto/Wordpress/<br> BigCommerce</h4>
+                    <ul class="list-unstyled">
+                    	<li><a href="">Design</a></li>
+                    	<li><a href="">SEO</a></li>
+                    	<li><a href="">Logos</a></li>
+                    	<li><a href="">Migration</a></li>
+                    	<li><a href="">Development</a></li>
+                    	<li><a href="">Responsive Design</a></li>
+                    	<li><a href="">FAQs</a></li>
+                    </ul>
+				</div>
+				<div><h4>Branding and Logo</h4> </div>
+			
+				
+		</div>
+		<div class="col-sm-4">
+			<div>
+				<h4>Mobile</h4>
+				<ul class="list-unstyled">
+					<li><a href="">Mobile Design</a> </li>
+					<li><a href="">Mobile SEO</a> </li>
+					<li><a href="">Mobile Responsive Design</a> </li>
+					<li><a href="">Mobile Marketing FAQs</a> </li>
+				</ul>
+			</div>
+			<div>
+				<h4>Industries</h4>
+				<ul class="list-unstyled">
+					<li><a href="">Makeup</a></li>
+					<li><a href="">Skincare</a></li>
+					<li><a href="">Fitness</a></li>
+					<li><a href="">Jewelry</a></li>
+					<li><a href="">Cell Phone Accessories</a></li>
+					<li><a href="">Ecigarettes</a></li>
+					<li><a href="">Weed/Cannabis/Marijuana</a></li>
+					<li><a href="">Dentistry</a></li>
+					<li><a href="">Guns Weapons</a></li>
+					<li><a href="">Alchohol Beverage</a></li>
+					<li><a href="">Car rentals</a></li>
+					<li><a href="">Credit Cards</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row row-footer text-center text-align-center">
+		<div class="col-sm-3"></div>
+		<p class="col-sm-6">&copy Copyright 2020 Gene SEO. All Rights Reserved | HTML sitemap | Privacy Policy</p>
+		<div class="col-sm-3"></div> 
+
+	</div>
+</div>
+</div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>
+<script type="text/javascript" src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<script>
+
+	$(document).ready(function () {
+			$('#myCarousel').carousel({interval:2000});
+			$('#carouselButton').click(function() {
+			console.log('click');
+				if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+					$('#myCarousel').carousel('pause');
+					$('#carouselButton').children('span').removeClass('fa-pause');
+					$('#carouselButton').children('span').addClass('fa-play');
+				}
+				else if ($('#carouselButton').children('span').hasClass('fa-play')) {
+					$('#myCarousel').carousel('cycle');
+					$('#carouselButton').children('span').removeClass('fa-play');
+					$('#carouselButton').children('span').addClass('fa-pause');
+				}
+			})
+		})
+</script>
+</body>
+</html>
